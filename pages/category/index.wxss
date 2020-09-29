@@ -1,0 +1,43 @@
+/* pages/category/index.wxss */
+page {
+  width: 100%;
+}
+.cate {
+  width: 100%;
+}
+.cate .cate_main {
+  display: flex;
+  width: 100%;
+  height: calc(100vh - 80rpx);
+}
+.cate .cate_main .lf {
+  flex: 2;
+}
+.cate .cate_main .lf .active {
+  color: var(--themeColor);
+  border-left: 1px solid var(--themeColor);
+}
+.cate .cate_main .lf view {
+  width: 100%;
+  height: 40rpx;
+  padding: 10rpx 0;
+  text-align: center;
+}
+.cate .cate_main .rg {
+  flex: 5;
+}
+.cate .cate_main .rg .cate_title {
+  text-align: center;
+  font-weight: bold;
+  padding: 10rpx 0;
+}
+.cate .cate_main .rg .img_warp navigator {
+  text-align: center;
+  width: 33%;
+}
+.cate .cate_main .rg .img_warp navigator view {
+  font-size: 24rpx;
+}
+.cate .cate_main .rg .img_warp navigator image {
+  width: 60%;
+}

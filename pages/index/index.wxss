@@ -1,0 +1,44 @@
+.swiper_view swiper {
+  width: 100%;
+  height: 340rpx;
+}
+.swiper_view swiper image {
+  width: 100%;
+}
+.cate_view {
+  display: flex;
+}
+.cate_view navigator {
+  flex: 1;
+}
+.cate_view navigator image {
+  width: 100%;
+}
+.floor_view {
+  width: 100%;
+}
+.floor_view .floor_item {
+  width: 100%;
+}
+.floor_view .floor_item .floor_title {
+  width: 100%;
+  padding: 10rpx 0rpx;
+}
+.floor_view .floor_item .floor_title image {
+  width: 100%;
+}
+.floor_view .floor_item .floor_img {
+  overflow: hidden;
+}
+.floor_view .floor_item .floor_img navigator {
+  float: left;
+  width: 32%;
+  padding: 4rpx;
+}
+.floor_view .floor_item .floor_img navigator:nth-last-child(-n+4) {
+  height: 26.20689655vw;
+}
+.floor_view .floor_item .floor_img navigator image {
+  width: 100%;
+  height: 100%;
+}

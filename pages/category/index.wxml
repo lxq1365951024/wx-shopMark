@@ -1,0 +1,22 @@
+<view class="cate">
+  <searchInput></searchInput>
+  <!-- 分类滚动部分 -->
+  <view class="cate_main">
+    <scroll-view class="lf" scroll-y="true"  >
+      <view wx:for="{{leftList}}"wx:key="*this" bindtap="handleTap" data-index='{{index}}' class="{{currentIndex===index?'active':''}}">
+        {{item}}
+      </view>
+    </scroll-view>
+    <scroll-view class="rg" scroll-y="true" scroll-top="{{scrollTop}}">
+      <view class="rg_main" wx:for="{{rightList}}" wx:for-item="item" wx:key="cat_id">
+        <view class="cate_title">{{item.cat_name}}</view>
+        <view class="flex_start flex_warp image img_warp">
+           <navigator wx:for="{{item.children}}" wx:for-item="citem" wx:for-index="index2" wx:key="cat_id" url='../goodsList/index?cid={{citem.cat_id}}'>
+          <image src="{{citem.cat_icon}}" mode="widthFix" />
+          <view>{{citem.cat_name}}</view>
+        </navigator>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+</view>

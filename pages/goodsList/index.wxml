@@ -1,0 +1,21 @@
+<searchInput></searchInput>
+<!-- 选项卡 -->
+<tabs tabs='{{tabList}}' bind:handelChildItem='changeChildItem'>
+  <view>
+   <block wx:if="{{tabList[0].isActive}}">
+    <view class="goods_item">
+      <navigator wx:for="{{goodsList}}" wx:key="goods_id">
+        <view class="img_warp">
+          <image src="{{item.goods_small_logo?item.goods_small_logo:'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=30305038,711507037&fm=26&gp=0.jpg'}}" mode="widthFix" /> 
+        </view>
+        <view class="info_warp">
+          <view class="info_title">{{item.goods_name}}</view>
+          <view class="info_price">￥{{item.goods_price}}</view>
+        </view>
+      </navigator>
+    </view> 
+   </block>
+   <block wx:elif="{{tabList[1].isActive}}">22</block>
+   <block wx:else="{{tabList[2].isActive}}">33</block>  
+  </view>  
+</tabs>

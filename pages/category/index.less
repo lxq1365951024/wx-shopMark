@@ -1,0 +1,49 @@
+/* pages/category/index.wxss */
+page{
+  width:100%;
+}
+
+.cate{
+  width: 100%;
+  .cate_main{
+    display: flex;
+    width:100%;
+    height:calc( 100vh - 80rpx);
+    .lf{
+      //flex 的子项默认height:100%
+      flex: 2;
+      .active{
+        color: var(--themeColor);
+        border-left: 1px solid var(--themeColor);
+      }
+      view{
+        width: 100%;
+        height: 40rpx;
+        padding: 10rpx 0;
+        text-align: center;
+      }
+    }
+    .rg{
+     flex: 5;
+     .cate_title{
+       text-align: center;
+       font-weight: bold;
+       padding: 10rpx 0;
+     }
+     .img_warp{
+        navigator{
+          text-align: center;
+          width: 33%;
+          view{
+            font-size: 24rpx;
+          }
+         image{
+           width: 60%;
+         }
+        }
+     }
+    
+    }
+  }
+  
+}

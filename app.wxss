@@ -1,0 +1,34 @@
+/* 全局引入iconfont图标 */
+@import 'style/iconfont';
+/* 样式重置 */
+page,view,text,swiper,swiper-item,image,navigator{
+  padding:0;
+  margin:0;
+  box-sizing:box-boder;
+}
+
+/* 定义主题颜色 */
+page{
+  /* 定义原生颜色变量 --其他页面可以使用*/
+  --themeColor:#3289fa;
+  font-size: 28rpx;
+}
+
+.flex_center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex_warp{
+  flex-wrap: wrap;
+}
+.flex_start{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.flex_end{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

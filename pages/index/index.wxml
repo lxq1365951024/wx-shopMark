@@ -1,0 +1,35 @@
+<searchInput></searchInput>
+<!-- 轮播 -->
+<view class="swiper_view">
+  <swiper indicator-dots="{{true}}" autoplay="{{true}}" interval="{{5000}}" duration="{{500}}">
+    <block wx:for="{{swiperImgs}}" wx:key="goods_id">
+      <swiper-item>
+        <image mode="widthFix" src="{{item.image_src}}" />
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+<!-- 分类导航 -->
+<view class="cate_view">
+  <navigator wx:for="{{cateImgs}}" wx:key="name"  open-type="navigate">
+      <image mode='widthFix' src='{{item.image_src}}' />
+  </navigator>  
+</view>
+<!-- 楼层图 -->
+<view class="floor_view">
+  <view class="floor_item" wx:for="{{floorList}}" wx:for-item="item" wx:key="name">
+    <view class="floor_title">
+      <image src="{{item.floor_title.image_src}}" mode="widthFix" />  
+    </view>
+    <view class="floor_img" >
+      <navigator wx:for="{{item.product_list}}" wx:for-item="citem" wx:for-index="index2" wx:key="name">
+      <image src="{{citem.image_src}}" mode="{{index2===0?'widthFix':'scaleToFill'}}" /> 
+    </navigator >
+    </view>
+  </view>
+</view>
+<view>
+</view>
+  
+  
+  
